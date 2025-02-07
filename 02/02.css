@@ -1,4 +1,97 @@
+* {
+   padding: 0px;
+   margin: 0px;
+}
+
+header {
+    padding: 20px;
+}
+
+
+main {
+    width: 80%;
+}
+
+main > section > p {
+    color: rgb(29, 29, 29);
+}
+
 section {
-    background-color: rgb(146, 214, 146);
-    color: rgb(78, 78, 78);
+    background-color: rgb(219, 219, 219);
+    color: rgb(219, 219, 219);
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+article {
+    border-left-width: 20px;
+    border-left-style: solid;
+    border-color: rgb(107, 107, 107);
+    border-
+    padding-left: 10px;
+    margin-bottom: 10px;
+    /*border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;*/
+}
+
+article > p {
+        font-family: "IBM Plex Sans KR", serif;
+        font-weight: 20px;
+        font-style: normal;      
+}
+#reactId {
+    background-color: rgb(219, 185, 185);
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+}
+
+li {
+    color: rgb(255, 255, 255);
+    width: 15%;
+    height: 40px;
+    padding: 5px;
+    background-color: rgb(36, 118, 212);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover {
+    background-color: rgb(134, 198, 255);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: white;
+}
+
+@media screen and (max-width : 768px) {
+    ul {
+        background-color: rgb(107, 107, 107);
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+    li{
+        width: 80%;
+        margin: 2px;
+    }
 }
