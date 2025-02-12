@@ -8,12 +8,19 @@ function check1() {
     let s = document.getElementById("txt1").value;
     //2 문자열 뒤집어진 문자열을 생성
     let sr = '';
-    for (let i = s.length - 1; i >= 0; i--) {
-        sr = sr + s[i];
-    }
-    console.log(s, sr);
+    // for (let i = s.length - 1; i >= 0; i--) {
+    //     sr = sr + s[i];
+    // }
+    // console.log(s, sr);
+    //2-1 배열을 이용하여 문자열 뒤집기
+    //문자열에서 특수한 문자를 지우고 싶을 때는 replace, split은 문자열에서 분리 => 결과는 배열 따라서 리버스가 가능 => 이 배열을 join으로 붙여서 문자열을 만든다. 디폴트가 쉽표니까 ''빈문자로 연결
+    sr = s.split('').reverse().join('');
+    console.log(sr);
+    console.log(`sr = ${sr}`);
+
+
     //3 입력문자열과 뒤집어진 문자열을 비교
-    if (s == sr) {
+    if (s.replaceAll(' ','')=== sr.replaceAll(' ','')) {
         showMsg('회문입니다.');
         
     } else {
