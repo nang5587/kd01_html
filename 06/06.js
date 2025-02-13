@@ -12,15 +12,21 @@ while(arrRR.length <6){
 //1-2 6개 번호 정렬
 arrRR.sort((a,b)=> a-b);
 console.log(arrRR);
+
 //1-3 +1개 번호 추출
 while(arrRR.length <7){
     let n = Math.floor(Math.random()*45)+1;//1~45까지
     if(!arrRR.includes(n)) arrRR.push(n);
 }
-let spanTgs = arrRR.map(item => `<span>${item}</span>`)
+arrRR.splice(6,0,'+');
+
+let spanTgs = arrRR.map(item => 
+    item == '+' ? `<span class = 'spplus'>${item}</span>`
+:`<span class='sp${Math.floor(item/10)}'>${item}</span>`)
 .join('');
+
 console.log(arrRR);
-document.getElementById("msg").innerHTML = spanTgs ;
+document.getElementById("msgLotto").innerHTML = spanTgs ;
 }
 
 // for(let i = 0; i<6; i++){

@@ -141,4 +141,3 @@ let arrCopy ;
 arrCopy = [...arr, ...arrRand];
 console.log(`arrCopy=${arrCopy}`);
 
-//로또
