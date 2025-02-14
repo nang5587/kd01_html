@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             //속성 변경
             bt.setAttribute("id", bt.textContent);
             console.log(bt.getAttribute);
+            
         })
     }
 });

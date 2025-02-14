@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     //이미지 속성 변경, 속성 바꾸는 건 변수니까 백틱 써야 함
     document.querySelector('img').setAttribute("src", `../img/${i}.png`)
     document.querySelector('img').setAttribute("alt", `${i}`);
-    });
+    
+});
    }
 );
